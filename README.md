@@ -29,6 +29,17 @@ npm run start
 npm run build
 ```
 
+## simple way
+```
+mkdir my_project
+cd my_project
+mkdir build
+touch index.js
+
+budo index.js --open --live --host localhost
+browserify index.js | uglifyjs -cm | indexhtmlify > build/index.html
+```
+
 ## git push
 ```
 git add .

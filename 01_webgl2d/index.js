@@ -1,3 +1,5 @@
+const foo = () => 'hello world';
+
 const canvas = document.createElement('canvas');
 const context = canvas.getContext('2d');
 document.body.appendChild(canvas);
