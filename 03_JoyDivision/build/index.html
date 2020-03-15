@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>---</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta charset=utf-8></head>
+<body></body>
+<script>!function n(a,h,u){function d(t,e){if(!h[t]){if(!a[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(f)return f(t,!0);var o=new Error("Cannot find module '"+t+"'");throw o.code="MODULE_NOT_FOUND",o}var i=h[t]={exports:{}};a[t][0].call(i.exports,function(e){return d(a[t][1][e]||e)},i,i.exports,n,a,h,u)}return h[t].exports}for(var f="function"==typeof require&&require,e=0;e<u.length;e++)d(u[e]);return d}({1:[function(e,t,r){var o=document.createElement("canvas"),i=o.getContext("2d");document.body.appendChild(o);var n;n=window.devicePixelRatio,o.width=640*n,o.height=640*n,o.style.width="640px",o.style.height="640px";var a=[];i.lineWidth=2;for(var h=0;h<o.width;h+=30){for(var u=[],d=0;d<o.height;d+=30){var f=Math.abs(d-o.height/2),v=Math.max(o.height/2-50-f,0),l={x:d,y:h+Math.random()*v/6*-1};u.push(l)}a.push(u)}for(h=5;h<a.length;h++){i.beginPath(),i.moveTo(a[h][0].x,a[h][0].y);for(d=0;d<a[h].length-2;d++){var x=(a[h][d].x+a[h][d+1].x)/2,c=(a[h][d].y+a[h][d+1].y)/2;i.quadraticCurveTo(a[h][d].x,a[h][d].y,x,c)}i.quadraticCurveTo(a[h][d].x,a[h][d].y,a[h][d+1].x,a[h][d+1].y),i.save(),i.globalCompositeOperation="destination-out",i.fill(),i.restore(),i.stroke()}},{}]},{},[1]);
+</script>
+</html>
