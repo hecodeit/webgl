@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8">
+	<style>html { height: 100%; }
+		body {
+			margin: 0;
+			cursor: pointer;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: -apple-system, BlinkMacSystemFont, "Helvetica", sans-serif;
+			font-size: 14px;
+		}
+		canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -2;
+		}
+		#cover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #E09992;
+			z-index: -1;
+			opacity: 0.8;
+		}
+		* { -webkit-overflow-scrolling: touch }</style>
+</head>
+
+<body>
+	<canvas id="canvas"></canvas>
+	<div id="cover"></div>
+	<div id="text">Tap & Hold to View Animation</div>
+	<script src="/04_3d-camera-in-canvas2d.e31bb0bc.js"></script>
+</body>
+
+</html>

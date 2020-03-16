@@ -1,0 +1,3 @@
+[submodule "webgl-workflow"]
+	path = webgl-workflow
+	url = git@github.com:hecodeit/webgl-workflow
